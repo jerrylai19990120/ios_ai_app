@@ -13,6 +13,8 @@
 		92B91B5225B76F64003D0B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B91B5025B76F64003D0B21 /* Main.storyboard */; };
 		92B91B5425B76F65003D0B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B91B5325B76F65003D0B21 /* Assets.xcassets */; };
 		92B91B5725B76F65003D0B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B91B5525B76F65003D0B21 /* LaunchScreen.storyboard */; };
+		92B91B5F25B77BA9003D0B21 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B91B5E25B77BA9003D0B21 /* SqueezeNet.mlmodel */; };
+		92B91B6125B77D9F003D0B21 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 92B91B6025B77D9F003D0B21 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		92B91B5325B76F65003D0B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B91B5625B76F65003D0B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B91B5825B76F65003D0B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B91B5E25B77BA9003D0B21 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		92B91B6025B77D9F003D0B21 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		92B91B4925B76F64003D0B21 /* Real Time Detection */ = {
 			isa = PBXGroup;
 			children = (
+				92B91B5E25B77BA9003D0B21 /* SqueezeNet.mlmodel */,
 				92B91B4A25B76F64003D0B21 /* AppDelegate.swift */,
 				92B91B4C25B76F64003D0B21 /* SceneDelegate.swift */,
+				92B91B6025B77D9F003D0B21 /* Resnet50.mlmodel */,
 				92B91B4E25B76F64003D0B21 /* ViewController.swift */,
 				92B91B5025B76F64003D0B21 /* Main.storyboard */,
 				92B91B5325B76F65003D0B21 /* Assets.xcassets */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B91B6125B77D9F003D0B21 /* Resnet50.mlmodel in Sources */,
 				92B91B4F25B76F64003D0B21 /* ViewController.swift in Sources */,
 				92B91B4B25B76F64003D0B21 /* AppDelegate.swift in Sources */,
 				92B91B4D25B76F64003D0B21 /* SceneDelegate.swift in Sources */,
+				92B91B5F25B77BA9003D0B21 /* SqueezeNet.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "Real Time Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 8L83CZ8839;
 				INFOPLIST_FILE = "Real Time Detection/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
