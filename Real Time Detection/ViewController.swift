@@ -87,7 +87,7 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         tabBarItem.image = UIImage(systemName: "house")
     }
     
@@ -98,7 +98,7 @@ class objectTrackingController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
     }
     
 }
