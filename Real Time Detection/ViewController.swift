@@ -10,11 +10,12 @@ import UIKit
 import AVKit
 import Vision
 
+
 class RealTimeDetectionController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     let identifierLabel: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .white
+        label.backgroundColor = .orange
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -23,7 +24,7 @@ class RealTimeDetectionController: UIViewController, AVCaptureVideoDataOutputSam
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        view.backgroundColor = .orange
         let captureSession = AVCaptureSession()
         guard let captureDevice = AVCaptureDevice.default(for: .video) else {return}
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else {
@@ -39,7 +40,7 @@ class RealTimeDetectionController: UIViewController, AVCaptureVideoDataOutputSam
         view.layer.addSublayer(previewLayer)
         
         
-        previewLayer.frame = view.bounds
+        previewLayer.frame = view.frame
         
         
         let dataOutput = AVCaptureVideoDataOutput()
@@ -50,8 +51,8 @@ class RealTimeDetectionController: UIViewController, AVCaptureVideoDataOutputSam
         
         identifierLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         identifierLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        identifierLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 32).isActive = true
-        identifierLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        identifierLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 32).isActive = true
+        identifierLabel.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         
         
@@ -72,7 +73,7 @@ class RealTimeDetectionController: UIViewController, AVCaptureVideoDataOutputSam
             print(firstObs.identifier, firstObs.confidence)
             
             DispatchQueue.main.async {
-                self.identifierLabel.text = "\(firstObs.identifier): \(firstObs.confidence*100)%"
+                self.identifierLabel.text = "\(firstObs.identifier): \(Int(firstObs.confidence*100))%"
             }
             
         }
@@ -87,18 +88,22 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .orange
         tabBarItem.image = UIImage(systemName: "house")
     }
     
 }
 
 
-class objectTrackingController: UIViewController {
+class objectTrackingController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .orange
+        
+        
     }
     
 }
+
+
