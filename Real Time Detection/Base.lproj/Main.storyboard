@@ -23,26 +23,50 @@
             </objects>
             <point key="canvasLocation" x="179.71014492753625" y="225"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="Dkk-Ec-mrm">
+        <!--Navigation Controller-->
+        <scene sceneID="9Il-1v-XpB">
             <objects>
-                <viewController id="HX7-AN-E8I" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8a3-5V-EhF">
+                <navigationController id="Pe3-Uk-HFH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lnf-18-jzD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIs-yQ-YCK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3516" y="380"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EkL-on-Yeb">
+            <objects>
+                <viewController id="7q0-j8-qSy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zml-PI-0QR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="bMQ-vy-vTY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9C-cd-rqF">
+                                <rect key="frame" x="48" y="406" width="318" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65020515619999997" green="0.49609163410000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7MJ-Ox-4dR"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="uCL-g2-2c3"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ncL-iG-mnB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSD-Xg-U3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2324" y="412"/>
+            <point key="canvasLocation" x="-2055" y="471"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VHU-sX-ril">
             <objects>
                 <tabBarController id="rzj-i1-IPd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yP2-iU-kwP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ipB-yi-bOj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
